@@ -1,0 +1,16 @@
+# data and generated outputs
+data/
+*.h5
+*.hdf
+*.csv
+*.dac
+*.png
+figures/
+# lecture slides
+*.pptx
+~$*
+# local
+.audit/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
