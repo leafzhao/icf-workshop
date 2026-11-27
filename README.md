@@ -17,8 +17,14 @@ Two independent sessions with real laser-plasma data:
 Install Python 3.10 or newer (for example from python.org or Anaconda), then in a terminal:
 
 ```bash
-pip install numpy scipy matplotlib h5py jupyterlab
+pip install -U -r requirements.txt
 ```
+
+`requirements.txt` lists numpy, scipy, matplotlib, h5py and jupyterlab. Tested with Python 3.12, numpy 2.5.0, scipy 1.18.1, matplotlib 3.11.0, h5py 3.16.0 and jupyterlab 4.3.4.
+
+Keep `-U`: it upgrades numpy and scipy together. An old scipy next to a new numpy prints `A NumPy version >=... and <... is required for this version of SciPy` and may give wrong results. If you see it, run the command above again and restart the kernel.
+
+`scripts/compare.py` also needs `pyhdf` to read the HDF4 files; the notebooks do not.
 
 ```bash
 jupyter lab pulse_workshop.ipynb
