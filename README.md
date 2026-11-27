@@ -12,6 +12,8 @@ Two independent sessions with real laser-plasma data:
 - `data/` holds the P510 shot data. The pulse notebook reads only the `.h5` files; the `.hdf` files are HDF4 copies with the same content.
 - `data/time-resolved spec/` holds the tSPM data: `20210814110.dac` (the spectrum, a text table exported by the streak camera) and `20210814110_2X_1.csv` to `_8.csv` (oscilloscope traces of beams 1 to 8).
 
+The data files are not in this repository. Get them from the workshop organisers and put them in `data/` with the layout above before you run the notebooks.
+
 ## Setup (Windows, macOS, Linux)
 
 Install Python 3.10 or newer (for example from python.org or Anaconda), then in a terminal:
